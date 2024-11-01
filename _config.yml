@@ -11,7 +11,11 @@ collections:
     permalink: /stories/:title/
   books:
     output: true
-    permalink: /books/:path/
+    permalink: /books/:name/
+  chapters:
+    output: true
+    permalink: /books/:book/:title/
+
 
 defaults:
   - scope:
@@ -25,10 +29,3 @@ pagination:
   per_page: 6
   permalink: '/stories/page:num/'
   collection: 'stories'
-
-permalink: none
-
-
-plugins:
-  - jekyll-sitemap
-  - jekyll-paginate-v2
