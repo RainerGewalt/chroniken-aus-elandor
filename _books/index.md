@@ -5,7 +5,7 @@ permalink: /books/
 is_book_overview: true
 ---
 
-<h1>{{ page.title }}</h1>
+<h1 class="main-title">{{ page.title }}</h1>
 
 <div class="books-grid">
     {% assign books = site.books | where_exp: "book", "book.title != page.title" %}
@@ -13,9 +13,9 @@ is_book_overview: true
     <div class="book-card">
         <a href="{{ book.url | relative_url }}">
             <img src="{{ book.cover_image | relative_url }}" alt="{{ book.title }} Cover" class="book-card-cover">
-            <h2>{{ book.title }}</h2>
+            <h2 class="book-title">{{ book.title }}</h2>
         </a>
-        <p>{{ book.description }}</p>
+        <p class="book-description">{{ book.description }}</p>
         <button class="toggle-chapters" data-book-title="{{ book.title }}">Kapitel anzeigen</button>
         <ul class="chapters-list" style="display: none;">
             {% assign book_chapters = site.chapters | where:"book", book.title %}
@@ -27,7 +27,7 @@ is_book_overview: true
     {% endfor %}
 </div>
 
-<!-- JavaScript für das Ausklappen der Kapitel -->
+<!-- JavaScript for toggling chapters -->
 <script>
     document.addEventListener('DOMContentLoaded', function() {
         const toggleButtons = document.querySelectorAll('.toggle-chapters');
