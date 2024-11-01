@@ -11,7 +11,8 @@
     <h1><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h1>
     <nav>
         <a href="{{ '/' | relative_url }}" {% if page.url == "/" %}class="active"{% endif %}>Startseite</a> |
-        <a href="{{ '/stories/' | relative_url }}" {% if page.url == "/stories/" %}class="active"{% endif %}>Geschichten</a> |
+        <a href="{{ '/stories/' | relative_url }}" {% if page.url == "/stories/" %}class="active"{% endif %}>Märchen</a> |
+        <a href="{{ '/stories/' | relative_url }}" {% if page.url == "/books/" %}class="active"{% endif %}>Abenteuer</a> |
         <a href="{{ '/about/' | relative_url }}" {% if page.url == "/about/" %}class="active"{% endif %}>Über Elandor</a> |
         <a href="{{ '/impressum/' | relative_url }}" {% if page.url == "/impressum/" %}class="active"{% endif %}>Impressum</a>
     </nav>

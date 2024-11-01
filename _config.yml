@@ -9,7 +9,9 @@ collections:
   stories:
     output: true
     permalink: /_stories/:title/
-
+  books:
+    output: true
+    permalink: /books/:path/
 defaults:
   - scope:
       path: ""
