@@ -1,0 +1,14 @@
+---
+layout: default
+title: "Geschichten"
+permalink: /stories/
+---
+
+<h1>Geschichten aus Elandor</h1>
+<ul>
+    {% for story in site.stories %}
+    <li>
+        <a href="{{ story.url | relative_url }}">{{ story.title }}</a>: {{ story.description }}
+    </li>
+    {% endfor %}
+</ul>
