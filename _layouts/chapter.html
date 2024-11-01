@@ -7,16 +7,7 @@
     <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
 </head>
 <body>
-<header>
-    <h1><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h1>
-    <nav>
-        <a href="{{ '/' | relative_url }}">Startseite</a>
-        <a href="{{ '/stories/' | relative_url }}">Märchen</a>
-        <a href="{{ '/books/' | relative_url }}" class="active">Abenteuer</a>
-        <a href="{{ '/about/' | relative_url }}">Über Elandor</a>
-        <a href="{{ '/der-autor/' | relative_url }}">Der Autor</a>
-    </nav>
-</header>
+{% include header.html %}
 <main>
     <article>
         <h1>{{ page.title }}</h1>

@@ -8,7 +8,7 @@ is_book_overview: true
 <h1>{{ page.title }}</h1>
 
 <div class="books-grid">
-    {% assign books = site.books %}
+    {% assign books = site.books | where_exp: "book", "book.title != page.title" %}
     {% for book in books %}
     <div class="book-card">
         <a href="{{ book.url | relative_url }}">
