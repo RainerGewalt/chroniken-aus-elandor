@@ -1,8 +1,7 @@
-# _config.yml
 title: "Die Ewigen Chroniken"
 description: "Entdecke die magische Welt von Elandor durch Märchen und Geschichten."
 url: "https://ewigenchroniken.de"
-baseurl: "" # falls im Unterverzeichnis, hier z.B. "/unterverzeichnis" eintragen
+baseurl: "" # Falls die Seite in einem Unterverzeichnis liegt, ändere dies entsprechend
 
 collections:
   stories:
