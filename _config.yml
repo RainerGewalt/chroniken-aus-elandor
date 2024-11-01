@@ -29,6 +29,6 @@ pagination:
 permalink: none
 
 
-
 plugins:
+  - jekyll-sitemap
   - jekyll-paginate-v2
