@@ -1,17 +1,19 @@
 ---
 layout: default
-title: "Märchen"
+title: "Märchen aus Elandor"
 permalink: /stories/
 ---
 
 <h1>Märchen aus Elandor</h1>
 
-<ul>
+<div class="stories-grid">
     {% for story in site.stories %}
-    <li>
-        <a href="{{ story.url | relative_url }}">{{ story.title }}</a>: {{ story.description }}
-    </li>
+    <div class="story-card">
+        <a href="{{ story.url | relative_url }}">
+            <img src="{{ story.cover_image | relative_url }}" alt="{{ story.title }} Cover" class="story-card-cover">
+            <h2>{{ story.title }}</h2>
+        </a>
+        <p>{{ story.description }}</p>
+    </div>
     {% endfor %}
-</ul>
-
-
+</div>
