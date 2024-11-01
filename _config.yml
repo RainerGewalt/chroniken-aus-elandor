@@ -1,24 +1,34 @@
 title: "Die Ewigen Chroniken"
 description: "Entdecke die magische Welt von Elandor durch Märchen und Geschichten."
 url: "https://ewigenchroniken.de"
-baseurl: "" # Falls die Seite in einem Unterverzeichnis liegt, ändere dies entsprechend
+baseurl: ""
 
 collections:
   pages:
     output: true
   stories:
     output: true
-    permalink: /_stories/:title/
+    permalink: /stories/:title/
   books:
     output: true
     permalink: /books/:path/
+
 defaults:
   - scope:
       path: ""
-      type: "_stories"
+      type: "stories"
     values:
       layout: story
 
-permalink: pretty
+pagination:
+  enabled: true
+  per_page: 6
+  permalink: '/stories/page:num/'
+  collection: 'stories'
+
+permalink: none
 
 
+
+plugins:
+  - jekyll-paginate-v2

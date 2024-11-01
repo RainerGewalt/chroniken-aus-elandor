@@ -1,5 +1,3 @@
-/* styles.css */
-
 /* Allgemeine Stileinstellungen */
 body {
     margin: 0;
@@ -8,19 +6,20 @@ body {
     color: #333;
 }
 
-/* Header-Styling */
+/* Header */
 header {
     background-color: #ffffff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     position: sticky;
     top: 0;
     z-index: 1000;
+    padding: 10px 20px;
 }
 
 header h1 {
     margin: 0;
-    padding: 20px;
     font-size: 24px;
+    text-align: center;
 }
 
 header h1 a {
@@ -28,16 +27,17 @@ header h1 a {
     color: #333;
 }
 
-/* Navigation-Styling */
+/* Navigation */
 nav {
     display: flex;
     justify-content: center;
+    gap: 15px;
     background-color: #ffffff;
     padding: 10px 0;
+    flex-wrap: wrap;
 }
 
 nav a {
-    margin: 0 15px;
     text-decoration: none;
     color: #555;
     font-weight: 500;
@@ -68,7 +68,7 @@ main img {
     border-radius: 8px;
 }
 
-/* Stories Grid auf der Startseite */
+/* Stories Grid */
 .stories-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -106,7 +106,7 @@ main img {
     color: #666;
 }
 
-/* Footer-Styling */
+/* Footer */
 footer {
     background-color: #ffffff;
     text-align: center;
@@ -138,4 +138,27 @@ footer {
     .story-card h2 {
         font-size: 18px;
     }
+}
+
+/* Paginierung */
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.page-link {
+    margin: 0 5px;
+    padding: 8px 12px;
+    text-decoration: none;
+    color: #555;
+    font-weight: 500;
+    transition: background-color 0.3s;
+}
+
+.page-link.active,
+.page-link:hover {
+    background-color: #ddd;
+    color: #333;
+    border-radius: 5px;
 }
