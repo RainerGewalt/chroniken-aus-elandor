@@ -4,7 +4,9 @@ title: "Die Glasdrachen von Blanchegarde"
 description: "Ein junges Mädchen begibt sich auf die Suche nach den legendären Glasdrachen, um die Balance der Zeit wiederherzustellen."
 date: 2024-11-01
 cover_image: "/assets/images/covers/die-glasdrachen-von-blanchegarde.jpg"
+permalink: /stories/die-glasdrachen-von-blanchegarde/
 ---
+
 
 In den schimmernden Ausläufern der Monts Argentés, dort wo die Sonnenstrahlen auf kristallklare Wasserfälle treffen und das Echo von uralten Melodien in den Wäldern widerhallt, lebten die sagenumwobenen Glasdrachen. Ihre Körper waren durchsichtig wie Bergkristall, und ihre Schuppen reflektierten das Licht in allen Farben des Regenbogens. Man sagte, sie könnten die Zeit in ihren Schuppen einfangen, die Vergangenheit bewahren und die Zukunft erahnen.
 

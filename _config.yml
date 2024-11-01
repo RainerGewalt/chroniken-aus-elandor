@@ -8,4 +8,6 @@ permalink: pretty
 collections:
   pages:
     output: true
+  stories:
+    output: true
 
