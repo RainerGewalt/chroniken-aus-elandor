@@ -1,11 +1,10 @@
-<!DOCTYPE html>
-<html lang="de">
 {% include head.html %}
 <body>
 <header>
     <h1>{{ site.title }}</h1>
     <nav>
         <a href="{{ '/' | relative_url }}">Startseite</a> |
+        <a href="{{ '/stories/' | relative_url }}">Geschichten</a> |
         <a href="{{ '/about/' | relative_url }}">Über Elandor</a> |
         <a href="{{ '/impressum/' | relative_url }}">Impressum</a>
     </nav>
@@ -13,8 +12,6 @@
 <main>
     {{ content }}
 </main>
-<footer>
-    <p>&copy; {{ site.time | date: '%Y' }} {{ site.title }}</p>
-</footer>
+{% include footer.html %}
 </body>
 </html>
