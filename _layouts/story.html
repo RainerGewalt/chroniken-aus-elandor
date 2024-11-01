@@ -19,7 +19,9 @@
 <main>
     <article>
         <h2>{{ page.title }}</h2>
-        <img src="{{ page.cover_image }}" alt="{{ page.title }} Cover Image">
+        {% if page.cover_image %}
+        <img src="{{ page.cover_image | relative_url }}" alt="{{ page.title }} Cover Image">
+        {% endif %}
         {{ content }}
     </article>
 </main>

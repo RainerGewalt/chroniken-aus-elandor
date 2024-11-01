@@ -3,7 +3,7 @@ layout: story
 title: "Die Glasdrachen von Blanchegarde"
 description: "Ein junges Mädchen begibt sich auf die Suche nach den legendären Glasdrachen, um die Balance der Zeit wiederherzustellen."
 date: 2024-11-01
-cover_image: "{{ '/assets/images/covers/die-glasdrachen-von-blanchegarde.webp' | relative_url }}"
+cover_image: /assets/images/covers/die-glasdrachen-von-blanchegarde.webp
 permalink: /_stories/die-glasdrachen-von-blanchegarde/
 ---
 
