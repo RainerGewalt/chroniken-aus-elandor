@@ -1,11 +1,19 @@
+# _config.yml
 title: "Die Ewigen Chroniken"
 description: "Entdecke die magische Welt von Elandor durch Märchen und Geschichten."
 url: "https://ewigenchroniken.de"
-baseurl: "" # Setze hier "/unterverzeichnis", falls die Seite in einem Unterverzeichnis läuft
+baseurl: "" # falls im Unterverzeichnis, hier z.B. "/unterverzeichnis" eintragen
 
 collections:
-  pages:
-    output: true
   stories:
     output: true
+    permalink: /stories/:title/
+
+defaults:
+  - scope:
+      path: ""
+      type: "stories"
+    values:
+      layout: story
+
 permalink: pretty
