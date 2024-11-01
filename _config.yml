@@ -4,6 +4,8 @@ url: "https://ewigenchroniken.de"
 baseurl: "" # Falls die Seite in einem Unterverzeichnis liegt, ändere dies entsprechend
 
 collections:
+  pages:
+    output: true
   stories:
     output: true
     permalink: /stories/:title/
@@ -16,3 +18,5 @@ defaults:
       layout: story
 
 permalink: pretty
+
+
