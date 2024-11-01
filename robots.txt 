@@ -1,0 +1,32 @@
+# robots.txt für SEO 2024/25
+
+User-agent: *
+# Zugriff auf sensible Verzeichnisse und unnötige Seiten blockieren
+Disallow: /admin/
+Disallow: /login/
+Disallow: /register/
+Disallow: /search/
+Disallow: /tags/
+Disallow: /drafts/ # Wenn es ein Entwurfsbereich gibt
+Disallow: /assets/ # Blockiert möglicherweise nicht benötigte Ressourcen, wenn sie nicht indexiert werden sollen
+Disallow: /404.html
+
+# Zugriff auf API-Dokumentationen oder technische Bereiche blockieren, falls nicht für die Öffentlichkeit gedacht
+Disallow: /api/
+Disallow: /cgi-bin/
+
+# Zugriff auf bestimmte Dateien blockieren
+Disallow: /*.php$
+Disallow: /*.txt$
+Disallow: /*.json$
+
+# Bilder und andere Medien
+Disallow: /private-images/ # Blockiert sensible oder nicht für die Öffentlichkeit bestimmte Bilder
+Allow: /images/ # Erlaubt den Zugriff auf öffentliche Bilder, wenn diese indexiert werden sollen
+
+# Erlaubt Zugriff auf CSS- und JavaScript-Dateien, die für Rendering wichtig sind
+Allow: /*.css
+Allow: /*.js
+
+# Sitemap-Link
+Sitemap: {{ site.url }}/sitemap.xml
