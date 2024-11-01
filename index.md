@@ -24,7 +24,6 @@ Willkommen zu einer Sammlung von Märchen und Geschichten aus der magischen Welt
     {% endfor %}
 </div>
 
-
 ## Erfahre mehr über Elandor
 
 Tauche tiefer in die Welt von Elandor ein und lerne die kulturellen und geographischen Eigenheiten dieses fantastischen Reichs kennen. Besuche unsere **[Über Elandor-Seite]({{ '/about/' | relative_url }})**, um mehr über die Entstehung dieser Welt zu erfahren.
