@@ -1,13 +1,11 @@
 title: "Die Ewigen Chroniken"
 description: "Entdecke die magische Welt von Elandor durch Märchen und Geschichten."
-url: "https://ewigenchroniken.de/"
-baseurl: "" # Verwende "/" wenn die Website in einem Unterverzeichnis liegt
-
-permalink: pretty
+url: "https://ewigenchroniken.de"
+baseurl: "" # Setze hier "/unterverzeichnis", falls die Seite in einem Unterverzeichnis läuft
 
 collections:
   pages:
     output: true
   stories:
     output: true
-
+permalink: pretty
