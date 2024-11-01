@@ -8,12 +8,12 @@ collections:
     output: true
   stories:
     output: true
-    permalink: /stories/:title/
+    permalink: /_stories/:title/
 
 defaults:
   - scope:
       path: ""
-      type: "stories"
+      type: "_stories"
     values:
       layout: story
 
