@@ -1,28 +1,6 @@
 <!DOCTYPE html>
 <html lang="de">
-<head>
-    <meta charset="UTF-8">
-    <title>{{ page.title }} - {{ site.title }}</title>
-    <link rel="stylesheet" href="/assets/css/style.css">
-
-    <!-- SEO Meta Tags -->
-    <meta name="description" content="{{ page.description | default: site.description }}">
-    <meta name="keywords" content="Elandor, Märchen, Geschichten, Fantasy, Chroniken">
-    <meta property="og:title" content="{{ page.title }}">
-    <meta property="og:description" content="{{ page.description | default: site.description }}">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="{{ page.url | absolute_url }}">
-    <meta property="og:image" content="/assets/images/cover.jpg">
-
-    <!-- Google Analytics (optional) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXXXXXX-X"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'UA-XXXXXXXXX-X');
-    </script>
-</head>
+{% include head.html %}
 <body>
 <header>
     <h1>{{ site.title }}</h1>
@@ -36,7 +14,7 @@
     {{ content }}
 </main>
 <footer>
-    <p>&copy; {{ site.time | date: '%Y' }} Chroniken aus Elandor</p>
+    <p>&copy; {{ site.time | date: '%Y' }} {{ site.title }}</p>
 </footer>
 </body>
 </html>
