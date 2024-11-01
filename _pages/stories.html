@@ -1,17 +1,28 @@
----
-layout: default
-title: "Geschichten"
-description: "Entdecke die Geschichten aus der magischen Welt von Elandor."
-permalink: /stories/
----
-
-<h1>Geschichten aus Elandor</h1>
-<p>Hier findest du eine Sammlung aller Geschichten aus der magischen Welt von Elandor.</p>
-
-<ul>
-    {% for story in site.stories %}
-    <li>
-        <a href="{{ story.url | relative_url }}">{{ story.title }}</a>: {{ story.description }}
-    </li>
-    {% endfor %}
-</ul>
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
+</head>
+<body>
+<header>
+    <h1><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h1>
+    <nav>
+        <a href="{{ '/' | relative_url }}">Startseite</a> |
+        <a href="{{ '/stories/' | relative_url }}">Geschichten</a> |
+        <a href="{{ '/about/' | relative_url }}">Über Elandor</a> |
+        <a href="{{ '/impressum/' | relative_url }}">Impressum</a>
+    </nav>
+</header>
+<main>
+    <article>
+        <h2>{{ page.title }}</h2>
+        <p><img src="{{ page.cover_image }}" alt="{{ page.title }} Cover Image"></p>
+        {{ content }}
+    </article>
+</main>
+{% include footer.html %}
+</body>
+</html>
