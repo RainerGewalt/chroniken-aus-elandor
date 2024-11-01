@@ -8,16 +8,8 @@
     <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
 </head>
 <body>
-<header>
-    <h1><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h1>
-    <nav>
-        <a href="{{ '/' | relative_url }}" {% if page.url == "/" %}class="active"{% endif %}>Startseite</a>
-        <a href="{{ '/stories/' | relative_url }}" {% if page.url == "/stories/" %}class="active"{% endif %}>Märchen</a>
-        <a href="{{ '/books/' | relative_url }}" {% if page.url == "/books/" %}class="active"{% endif %}>Abenteuer</a>
-        <a href="{{ '/about/' | relative_url }}" {% if page.url == "/about/" %}class="active"{% endif %}>Über Elandor</a>
-        <a href="{{ '/der-autor/' | relative_url }}" {% if page.url == "/der-autor/" %}class="active"{% endif %}>Der Autor</a>
-    </nav>
-</header>
+
+{% include header.html %}
 <main>
     <article>
         <h2>{{ page.title }}</h2>
