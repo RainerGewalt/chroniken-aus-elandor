@@ -16,7 +16,7 @@ Willkommen zu einer Sammlung von Märchen und Geschichten aus der magischen Welt
     {% for story in site.stories %}
     <div class="story-card">
         <a href="{{ story.url | relative_url }}">
-            <img src="{{ story.cover_image }}" alt="{{ story.title }} Cover" class="story-card-cover">
+            <img src="{{ story.cover_image | relative_url }}" alt="{{ story.title }} Cover" class="story-card-cover">
             <h2>{{ story.title }}</h2>
         </a>
         <p>{{ story.description }}</p>

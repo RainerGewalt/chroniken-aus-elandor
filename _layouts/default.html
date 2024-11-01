@@ -1,20 +1,19 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <!-- ... dein vorhandener Code ... -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }} | {{ site.title }}</title>
     <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
-    <!-- Einbindung von Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap">
 </head>
 <body>
 <header>
     <h1><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h1>
     <nav>
-        <a href="{{ '/' | relative_url }}">Startseite</a>
-        <a href="{{ '/stories/' | relative_url }}">Geschichten</a>
-        <a href="{{ '/about/' | relative_url }}">Über Elandor</a>
-        <a href="{{ '/impressum/' | relative_url }}">Impressum</a>
+        <a href="{{ '/' | relative_url }}" {% if page.url == "/" %}class="active"{% endif %}>Startseite</a> |
+        <a href="{{ '/stories/' | relative_url }}" {% if page.url == "/stories/" %}class="active"{% endif %}>Geschichten</a> |
+        <a href="{{ '/about/' | relative_url }}" {% if page.url == "/about/" %}class="active"{% endif %}>Über Elandor</a> |
+        <a href="{{ '/impressum/' | relative_url }}" {% if page.url == "/impressum/" %}class="active"{% endif %}>Impressum</a>
     </nav>
 </header>
 <main>
