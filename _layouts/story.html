@@ -2,18 +2,169 @@
 <html lang="de">
 
 {% include head.html %}
+
 <body>
+<!-- Seitenleiste mit Nachtmodus- und Lesezeichen-Buttons -->
+<div class="sidebar">
+    <div class="sidebar-toggle">☰</div>
+    <div class="sidebar-content">
+        <button id="nightModeToggle">🌙 Nachtmodus</button>
+        <button id="bookmarkBtn">📑 Lesezeichen</button>
+    </div>
+</div>
+
+<!-- Fortschrittsbalken links -->
+<div class="progress-bar">
+    <div class="progress"></div>
+</div>
 
 {% include header.html %}
+
 <main>
     <article>
         <h2>{{ page.title }}</h2>
         {% if page.cover_image %}
         <img src="{{ page.cover_image | relative_url }}" alt="{{ page.title }} Cover Image">
         {% endif %}
-        {{ content }}
+        <div class="chapter-content section-transition">
+            {{ content }}
+        </div>
     </article>
 </main>
+
 {% include footer.html %}
+
+<!-- CSS für Sidebar, Nachtmodus und Fortschrittsbalken -->
+<style>
+    /* Seitenleiste */
+    .sidebar {
+        position: fixed;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 0 8px 8px 0;
+        padding: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s, width 0.3s;
+        overflow: hidden;
+        z-index: 10;
+        width: 40px;
+        text-align: center;
+    }
+
+    .sidebar:hover {
+        width: 140px;
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    .sidebar-toggle {
+        color: #ffffff;
+        font-size: 1.2em;
+    }
+
+    .sidebar-content {
+        display: none;
+        margin-top: 10px;
+    }
+
+    .sidebar:hover .sidebar-content {
+        display: block;
+    }
+
+    .sidebar-content button {
+        display: block;
+        width: 100%;
+        padding: 8px;
+        background: none;
+        border: none;
+        color: #ffffff;
+        font-size: 0.9em;
+        text-align: left;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    .sidebar-content button:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    /* Dark Mode */
+    body.dark-mode {
+        background-color: #2b2b2b;
+        color: #dcdcdc;
+    }
+
+    .dark-mode h2 {
+        color: #ffffff;
+    }
+
+    /* Fortschrittsbalken links */
+    .progress-bar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 4px;
+        background-color: #f0f0f0;
+        z-index: 10;
+    }
+
+    .progress {
+        width: 100%;
+        background-color: #333;
+        height: 0;
+        transition: height 0.1s ease;
+    }
+
+    body.dark-mode .progress-bar {
+        background-color: #444;
+    }
+
+    body.dark-mode .progress {
+        background-color: #ffffff;
+    }
+
+    /* Responsive Anpassung */
+    @media (max-width: 600px) {
+        .sidebar {
+            display: none;
+        }
+    }
+</style>
+
+<!-- JavaScript für Nachtmodus, Fortschrittsbalken und Lesezeichen -->
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        // Nachtmodus-Umschalter
+        const nightModeToggle = document.getElementById("nightModeToggle");
+        nightModeToggle.addEventListener("click", () => {
+            document.body.classList.toggle("dark-mode");
+            nightModeToggle.textContent = document.body.classList.contains("dark-mode") ? "☀️ Tagmodus" : "🌙 Nachtmodus";
+        });
+
+        // Fortschrittsbalken
+        window.addEventListener("scroll", () => {
+            const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+            const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const progressHeight = (scrollTop / scrollHeight) * 100;
+            document.querySelector(".progress").style.height = progressHeight + "%";
+        });
+
+        // Lesezeichen
+        const bookmarkBtn = document.getElementById("bookmarkBtn");
+        bookmarkBtn.addEventListener("click", () => {
+            const scrollPosition = window.scrollY;
+            localStorage.setItem("bookmark", scrollPosition);
+            alert("Lesezeichen gesetzt!");
+        });
+
+        // Lesezeichen wiederherstellen
+        const savedPosition = localStorage.getItem("bookmark");
+        if (savedPosition) {
+            window.scrollTo(0, savedPosition);
+        }
+    });
+</script>
 </body>
 </html>
