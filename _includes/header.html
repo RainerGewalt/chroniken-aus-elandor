@@ -6,9 +6,49 @@
     <title>{{ page.title }} | {{ site.title }}</title>
     <meta name="author" content="Florian Herzog">
     <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
+    <style>
+        /* Grundlegendes zentriertes Styling */
+        header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 1rem;
+            position: relative;
+        }
+        nav {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            transition: max-height 0.3s ease; /* Smooth Transition */
+            overflow: hidden;
+            max-height: 500px; /* Maximalhöhe für das geöffnete Menü */
+        }
+        /* Mobilansicht */
+        @media (max-width: 768px) {
+            nav {
+                max-height: 0; /* Menü verstecken */
+                flex-direction: column;
+                align-items: center;
+            }
+            header.menu-open nav {
+                max-height: 500px; /* Geöffnetes Menü */
+            }
+            .chevron-toggle {
+                font-size: 2rem;
+                cursor: pointer;
+                position: absolute;
+                bottom: -10px; /* Chevron am unteren Rand des Banners */
+                display: block;
+            }
+        }
+        .chevron-toggle {
+            display: none; /* Nur bei kleinen Bildschirmen anzeigen */
+        }
+    </style>
 </head>
 <body>
-<header>
+<header id="header" class="{% if page.url == '/' or page.url == '/stories/' or page.url == '/books/' or page.url == '/about/' or page.url == '/der-autor/' %}menu-open{% endif %}">
     <h1><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h1>
     <nav>
         <a href="{{ '/' | relative_url }}" {% if page.url == "/" %}class="active"{% endif %}>Startseite</a>
@@ -17,4 +57,13 @@
         <a href="{{ '/about/' | relative_url }}" {% if page.url == "/about/" %}class="active"{% endif %}>Über Elandor</a>
         <a href="{{ '/der-autor/' | relative_url }}" {% if page.url == "/der-autor/" %}class="active"{% endif %}>Der Autor</a>
     </nav>
+    <span class="chevron-toggle" onclick="toggleMenu()">⌄</span>
 </header>
+
+<script>
+    function toggleMenu() {
+        document.getElementById('header').classList.toggle('menu-open');
+    }
+</script>
+</body>
+</html>
