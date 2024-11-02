@@ -2,14 +2,19 @@
     <div class="footer-content">
         <p>&copy; {{ site.time | date: "%Y" }} {{ site.title }}. Alle Rechte vorbehalten.</p>
         <div class="license-link">
-            <a href="{{ '/license/' | relative_url }}">Lizenz</a>
+            <a href="{{ '/license/' | relative_url }}" aria-label="Lizenz">
+                <img src="{{ '/assets/images/icons/certificate.png' | relative_url }}" alt="Lizenz Icon" class="social-icon">
+                <span>Lizenz</span>
+            </a>
         </div>
         <div class="social-links">
             <a href="https://www.youtube.com/@florianhzg4113" target="_blank" aria-label="YouTube">
-                <img src="{{ '/assets/images/icons/youtube.png' | relative_url }}" alt="YouTube Icon">
+                <img src="{{ '/assets/images/icons/youtube.png' | relative_url }}" alt="YouTube Icon" class="social-icon">
+                <span>YouTube</span>
             </a>
             <a href="https://podcasters.spotify.com/pod/show/florian-przybylak" target="_blank" aria-label="Spotify">
-                <img src="{{ '/assets/images/icons/spotify.png' | relative_url }}" alt="Spotify Icon">
+                <img src="{{ '/assets/images/icons/spotify.png' | relative_url }}" alt="Spotify Icon" class="social-icon">
+                <span>Spotify</span>
             </a>
         </div>
     </div>
