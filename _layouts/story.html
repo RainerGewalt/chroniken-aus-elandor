@@ -42,11 +42,11 @@
         top: 50%;
         left: 0;
         transform: translateY(-50%);
-        background-color: rgba(0, 0, 0, 0.5);
+        background-color: rgba(0, 0, 0, 0.3); /* Erhöhte Transparenz */
         border-radius: 0 8px 8px 0;
         padding: 5px;
         cursor: pointer;
-        transition: background-color 0.3s, width 0.3s;
+        transition: background-color 0.3s, width 0.3s, left 0.3s;
         overflow: hidden;
         z-index: 10;
         width: 40px;
@@ -55,12 +55,13 @@
 
     .sidebar:hover {
         width: 140px;
-        background-color: rgba(0, 0, 0, 0.8);
+        background-color: rgba(0, 0, 0, 0.6); /* Erhöhte Transparenz beim Hover */
     }
 
     .sidebar-toggle {
         color: #ffffff;
         font-size: 1.2em;
+        transition: font-size 0.3s;
     }
 
     .sidebar-content {
@@ -82,11 +83,11 @@
         font-size: 0.9em;
         text-align: left;
         cursor: pointer;
-        transition: background-color 0.3s;
+        transition: background-color 0.3s, font-size 0.3s;
     }
 
     .sidebar-content button:hover {
-        background-color: rgba(255, 255, 255, 0.2);
+        background-color: rgba(255, 255, 255, 0.15);
     }
 
     /* Dark Mode */
@@ -105,12 +106,12 @@
         top: 0;
         left: 0;
         height: 100%;
-        width: 4px;
+        width: 6px; /* Angepasst für bessere Sichtbarkeit */
         background-color: #f0f0f0;
         z-index: 10;
     }
 
-    .progress {
+    .progress-bar .progress {
         width: 100%;
         background-color: #333;
         height: 0;
@@ -118,17 +119,83 @@
     }
 
     body.dark-mode .progress-bar {
-        background-color: #444;
+        background-color: #2b2b2b;
     }
 
-    body.dark-mode .progress {
-        background-color: #ffffff;
+    body.dark-mode .progress-bar .progress {
+        background-color: #e0e0e0;
     }
 
-    /* Responsive Anpassung */
+    /* Smooth Scrolling */
+    html {
+        scroll-behavior: smooth;
+    }
+
+    /* Hauptinhalt - Padding zur Vermeidung von Überlappung */
+    main {
+        padding-left: 130px; /* Angepasst, um Überlappung zu vermeiden */
+        transition: padding-left 0.3s;
+    }
+
+    /* Anpassungen für kleinere Bildschirme */
+    @media (max-width: 900px) {
+        .sidebar {
+            width: 35px;
+            left: 8px;
+        }
+
+        .sidebar:hover {
+            width: 130px; /* Leicht reduziert, um Platz zu sparen */
+        }
+
+        main {
+            padding-left: 120px; /* Reduzierter Abstand */
+        }
+    }
+
     @media (max-width: 600px) {
         .sidebar {
-            display: none;
+            width: 30px;
+            left: 5px; /* Weiter reduziert */
+        }
+
+        .sidebar:hover {
+            width: 100px; /* Weiter reduzierte Hover-Breite */
+        }
+
+        .sidebar-toggle {
+            font-size: 1em; /* Kleinere Fontgröße */
+        }
+
+        .sidebar-content button {
+            font-size: 0.8em; /* Kleinere Button-Schriftgröße */
+        }
+
+        main {
+            padding-left: 90px; /* Weiter reduzierter Abstand */
+        }
+    }
+
+    @media (max-width: 400px) {
+        .sidebar {
+            width: 25px;
+            left: 3px; /* Noch weiter reduziert */
+        }
+
+        .sidebar:hover {
+            width: 80px; /* Weiter reduzierte Hover-Breite */
+        }
+
+        .sidebar-toggle {
+            font-size: 0.9em; /* Weiter kleinere Fontgröße */
+        }
+
+        .sidebar-content button {
+            font-size: 0.7em; /* Weiter kleinere Button-Schriftgröße */
+        }
+
+        main {
+            padding-left: 70px; /* Noch schmalerer Abstand */
         }
     }
 </style>
@@ -167,4 +234,5 @@
     });
 </script>
 </body>
+
 </html>
