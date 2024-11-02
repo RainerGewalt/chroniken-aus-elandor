@@ -1,0 +1,97 @@
+/* Section: Elandor Landing Page */
+.elandor-landing-page {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+}
+
+.elandor-landing-hero {
+    text-align: center;
+    padding: 0 20px;
+}
+
+.elandor-landing-info h1 {
+    font-size: 3em; /* Gleiche Größe wie auf der Author Page */
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.elandor-landing-info p {
+    font-size: 1.2em; /* Gleiche Größe wie auf der Author Page */
+    color: #555;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto 20px;
+    text-align: justify;
+}
+
+.elandor-landing-info h2 {
+    font-size: 2em; /* Einheitliche Größe für Untertitel */
+    color: #0073e6;
+    margin: 30px 0 10px;
+    text-align: center;
+}
+
+/* Stories Grid */
+.stories-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.story-card {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    padding: 15px;
+    text-align: justify;
+}
+
+.story-card:hover {
+    transform: translateY(-5px);
+}
+
+.story-card-cover {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.story-card h3 {
+    font-size: 1.3em; /* Anpassung für einheitliche Lesbarkeit */
+    color: #333;
+    margin: 15px 0 10px;
+    text-align: center;
+}
+
+.story-card p {
+    font-size: 1em; /* Etwas größere Lesbarkeit als Standardtext */
+    color: #666;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+/* Section: Updates and Social Links */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.social-links a img {
+    width: 36px;
+    height: 36px;
+    transition: opacity 0.3s;
+}
+
+.social-links a img:hover {
+    opacity: 0.8;
+}
