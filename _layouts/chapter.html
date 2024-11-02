@@ -39,11 +39,11 @@
         top: 50%;
         left: 0;
         transform: translateY(-50%);
-        background-color: rgba(0, 0, 0, 0.5);
+        background-color: rgba(0, 0, 0, 0.3);
         border-radius: 0 8px 8px 0;
         padding: 5px;
         cursor: pointer;
-        transition: background-color 0.3s, width 0.3s;
+        transition: background-color 0.3s, width 0.3s, left 0.3s;
         overflow: hidden;
         z-index: 10;
         width: 40px;
@@ -52,12 +52,13 @@
 
     .sidebar:hover {
         width: 140px;
-        background-color: rgba(0, 0, 0, 0.8);
+        background-color: rgba(0, 0, 0, 0.6);
     }
 
     .sidebar-toggle {
         color: #ffffff;
         font-size: 1.2em;
+        transition: font-size 0.3s;
     }
 
     .sidebar-content {
@@ -79,11 +80,11 @@
         font-size: 0.9em;
         text-align: left;
         cursor: pointer;
-        transition: background-color 0.3s;
+        transition: background-color 0.3s, font-size 0.3s;
     }
 
     .sidebar-content button:hover {
-        background-color: rgba(255, 255, 255, 0.2);
+        background-color: rgba(255, 255, 255, 0.15);
     }
 
     /* Dark Mode */
@@ -129,10 +130,70 @@
         scroll-behavior: smooth;
     }
 
-    /* Responsive Anpassung */
+    /* Standard: Breite 140px, padding-left 130px (kleinerer Abstand) */
+    main {
+        padding-left: 130px;
+        transition: padding-left 0.3s;
+    }
+
+    @media (max-width: 900px) {
+        .sidebar {
+            width: 35px;
+            left: 8px;
+        }
+
+        .sidebar:hover {
+            width: 140px; /* Beibehaltung der Hover-Breite */
+        }
+
+        main {
+            padding-left: 130px; /* Bleibt gleich, da Hover-Breite unverändert bleibt */
+        }
+    }
+
     @media (max-width: 600px) {
         .sidebar {
-            display: none;
+            width: 30px;
+            left: 5px; /* Leichter reduziert für kleineren Abstand */
+        }
+
+        .sidebar:hover {
+            width: 100px; /* Reduzierte Hover-Breite */
+        }
+
+        .sidebar-toggle {
+            font-size: 1em; /* Kleinere Fontgröße */
+        }
+
+        .sidebar-content button {
+            font-size: 0.8em; /* Kleinere Button-Schriftgröße */
+        }
+
+        main {
+            padding-left: 90px; /* Reduzierter Abstand zur Sidebar */
+        }
+    }
+
+    @media (max-width: 400px) {
+        .sidebar {
+            width: 25px;
+            left: 3px; /* Weiter reduziert */
+        }
+
+        .sidebar:hover {
+            width: 80px; /* Weiter reduzierte Hover-Breite */
+        }
+
+        .sidebar-toggle {
+            font-size: 0.9em; /* Weiter kleinere Fontgröße */
+        }
+
+        .sidebar-content button {
+            font-size: 0.7em; /* Weiter kleinere Button-Schriftgröße */
+        }
+
+        main {
+            padding-left: 70px; /* Noch schmalerer Abstand */
         }
     }
 </style>
