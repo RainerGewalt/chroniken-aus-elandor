@@ -7,7 +7,7 @@
     <meta name="author" content="Florian Herzog">
     <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
     <style>
-        /* Grundlegendes zentriertes Styling */
+        /* Grundlegendes Styling */
         header {
             display: flex;
             flex-direction: column;
@@ -17,38 +17,47 @@
             position: relative;
         }
         nav {
-            display: flex;
+            display: none;
             gap: 1rem;
             justify-content: center;
-            transition: max-height 0.3s ease; /* Smooth Transition */
             overflow: hidden;
-            max-height: 500px; /* Maximalhöhe für das geöffnete Menü */
+            transition: max-height 0.5s ease; /* Smooth Transition */
+            max-height: 0; /* Startzustand geschlossen */
+        }
+        /* Desktop-Ansicht */
+        @media (min-width: 769px) {
+            nav {
+                display: flex;
+                max-height: none; /* Keine Beschränkung auf Desktop */
+            }
+            .chevron-toggle {
+                display: none; /* Chevron auf Desktop ausblenden */
+            }
         }
         /* Mobilansicht */
         @media (max-width: 768px) {
-            nav {
-                max-height: 0; /* Menü verstecken */
-                flex-direction: column;
-                align-items: center;
-            }
-            header.menu-open nav {
-                max-height: 500px; /* Geöffnetes Menü */
-            }
             .chevron-toggle {
+                display: block;
                 font-size: 2rem;
                 cursor: pointer;
                 position: absolute;
-                bottom: -10px; /* Chevron am unteren Rand des Banners */
-                display: block;
+                bottom: -10px;
+                transition: transform 0.3s ease; /* Smooth Rotation */
             }
-        }
-        .chevron-toggle {
-            display: none; /* Nur bei kleinen Bildschirmen anzeigen */
+            header.menu-open nav {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                max-height: 500px; /* Höhe für geöffnetes Menü */
+            }
+            header.menu-open .chevron-toggle {
+                transform: rotate(180deg); /* Chevron nach oben drehen */
+            }
         }
     </style>
 </head>
 <body>
-<header id="header" class="{% if page.url == '/' or page.url == '/stories/' or page.url == '/books/' or page.url == '/about/' or page.url == '/der-autor/' %}menu-open{% endif %}">
+<header id="header">
     <h1><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h1>
     <nav>
         <a href="{{ '/' | relative_url }}" {% if page.url == "/" %}class="active"{% endif %}>Startseite</a>
