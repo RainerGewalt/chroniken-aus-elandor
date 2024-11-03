@@ -15,20 +15,22 @@
             text-align: center;
             padding: 1rem;
             position: relative;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Schatten für das Menü */
+            z-index: 1; /* Sicherstellen, dass der Header über dem Chevron liegt */
         }
         nav {
             display: none;
             gap: 1rem;
             justify-content: center;
             overflow: hidden;
-            transition: max-height 0.5s ease; /* Smooth Transition */
+            transition: max-height 0.5s ease;
             max-height: 0; /* Startzustand geschlossen */
         }
         /* Desktop-Ansicht */
         @media (min-width: 769px) {
             nav {
                 display: flex;
-                max-height: none; /* Keine Beschränkung auf Desktop */
+                max-height: none;
             }
             .chevron-toggle {
                 display: none; /* Chevron auf Desktop ausblenden */
@@ -38,17 +40,27 @@
         @media (max-width: 768px) {
             .chevron-toggle {
                 display: block;
-                font-size: 2rem;
+                font-size: 1.8rem;
                 cursor: pointer;
                 position: absolute;
-                bottom: -10px;
-                transition: transform 0.3s ease; /* Smooth Rotation */
+                bottom: -20px; /* Mehr Abstand nach unten, um Titelüberlappung zu vermeiden */
+                color: #333;
+                background-color: #f9f9f9; /* Heller Hintergrund für besseren Kontrast */
+                border-radius: 50%;
+                padding: 0.2rem 0.4rem;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+                transition: transform 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
+                z-index: 0; /* Chevron-Schichtebene unter dem Header */
+            }
+            .chevron-toggle:hover {
+                color: #555; /* Leichter Farbwechsel beim Hover */
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Intensiverer Schatten beim Hover */
             }
             header.menu-open nav {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                max-height: 500px; /* Höhe für geöffnetes Menü */
+                max-height: 500px;
             }
             header.menu-open .chevron-toggle {
                 transform: rotate(180deg); /* Chevron nach oben drehen */
