@@ -7,16 +7,98 @@
 <main>
     {{ content }}
 
-    <h3>Kapitel in {{ page.title }}</h3>
+    <h3 class="chapter-list-title">Kapitel in {{ page.title }}</h3>
     <ul class="chapters-list">
         {% assign book_chapters = site.chapters | where:"book", page.title %}
         {% for chapter in book_chapters %}
-        <li>
-            <a href="{{ chapter.url | relative_url }}">{{ chapter.title }}</a>
+        <li class="chapter-item">
+            <a href="{{ chapter.url | relative_url }}" class="chapter-link">{{ chapter.title }}</a>
         </li>
         {% endfor %}
     </ul>
 </main>
 {% include footer.html %}
+
+<style>
+    /* Kapitelüberschrift */
+    .chapter-list-title {
+        font-size: 2rem;
+        color: #222;
+        font-weight: 700;
+        margin: 2.5rem 0 1.5rem;
+        text-align: center;
+        letter-spacing: 0.5px;
+    }
+
+    /* Kapitel-Liste */
+    .chapters-list {
+        list-style: none;
+        padding: 0;
+        margin: 0 auto;
+        display: grid;
+        gap: 1.5rem;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        max-width: 800px;
+    }
+
+    /* Kapitel-Element */
+    .chapter-item {
+        background-color: #ffffff;
+        border-radius: 12px;
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .chapter-item:hover {
+        transform: translateY(-6px) scale(1.02);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    /* Kapitel-Link */
+    .chapter-link {
+        display: block;
+        padding: 1.2rem 1.5rem;
+        color: #333;
+        font-size: 1.25rem;
+        font-weight: 500;
+        text-align: center;
+        text-decoration: none;
+        transition: color 0.3s ease;
+        position: relative;
+    }
+
+    .chapter-link::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        width: 0;
+        height: 3px;
+        background-color: #007acc;
+        transition: width 0.3s ease, left 0.3s ease;
+        transform: translateX(-50%);
+    }
+
+    .chapter-link:hover {
+        color: #007acc;
+    }
+
+    .chapter-link:hover::after {
+        width: 60%;
+        left: 50%;
+    }
+
+    /* Responsive Anpassungen */
+    @media (max-width: 600px) {
+        .chapter-list-title {
+            font-size: 1.8rem;
+        }
+        .chapter-link {
+            font-size: 1.1rem;
+            padding: 1rem;
+        }
+    }
+</style>
 </body>
 </html>
