@@ -2,7 +2,10 @@
 layout: chapter
 title: "Kapitel 1 - Der Anfang"
 book: "Die Ewigen Chroniken - Erwachen"
-permalink: /books/die-ewigen-chroniken-erwachen/kapitel-1/
+description: "Das erste Kapitel der Ewigen Chroniken - Erwachen: Zwei Fremde werden in ein gefährliches Abenteuer verwickelt, das die Welt für immer verändern könnte."
+cover_image: /assets/images/covers/die-ewigen-chroniken-erwachen.jpeg
+permalink: /buecher/die-ewigen-chroniken-erwachen/kapitel-1/
+keywords: ["Ewigen Chroniken", "Kapitel 1", "Abenteuer", "Geheimnisse", "Heilung", "Zerstörung"]
 ---
 
 <div class="poem-container">

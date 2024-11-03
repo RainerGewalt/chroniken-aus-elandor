@@ -1,10 +1,11 @@
 ---
 layout: story
 title: "Die Flammenvögel von Asahirano"
-description: "In den weiten Reisfeldern von Asahirano, wo der Morgennebel die Hügel umhüllt, entdeckt ein einfacher Bauer namens Hiroshi das wahre Gleichgewicht zwischen Mensch und Natur. Angetrieben von Sorge und Verzweiflung begibt er sich auf eine mutige Suche, um das Dorf zu retten. Doch was als Heldentat beginnt, wird zu einer tiefgreifenden Lektion über Verantwortung und Respekt."
+description: "Ein Bauer namens Hiroshi lernt in den Reisfeldern von Asahirano eine Lektion über Verantwortung und Respekt, als er versucht, sein Dorf mit der Hilfe der mystischen Flammenvögel zu retten."
 date: 2024-11-02
 cover_image: /assets/images/covers/die-flammvoegel-von-asashirano.webp
-permalink: /_stories/die-flammvoegel-von-asashirano/
+permalink: /geschichten/die-flammvoegel-von-asashirano/
+keywords: ["Flammenvögel", "Asahirano", "Elandor", "Hiroshi", "Natur", "Verantwortung"]
 ---
 
 In den weiten, goldenen Reisfeldern von Asahirano, wo der Morgennebel die Hügel umschmeichelte und Kraniche anmutig über den Himmel zogen, lebte ein Bauer namens Hiroshi. Er war ein Mann von einfachem Gemüt, doch sein Herz war tief mit dem Land verbunden. Tag für Tag arbeitete er unermüdlich auf seinen Feldern, doch in diesem Jahr wuchsen die Pflanzen langsamer, und eine besorgniserregende Stille legte sich über das Land.
