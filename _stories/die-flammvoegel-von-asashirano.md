@@ -4,7 +4,7 @@ title: "Die Flammenvögel von Asahirano"
 description: "Ein Bauer namens Hiroshi lernt in den Reisfeldern von Asahirano eine Lektion über Verantwortung und Respekt, als er versucht, sein Dorf mit der Hilfe der mystischen Flammenvögel zu retten."
 date: 2024-11-02
 cover_image: /assets/images/covers/die-flammvoegel-von-asashirano.webp
-permalink: /geschichten/die-flammvoegel-von-asashirano/
+permalink: /maerchen/die-flammvoegel-von-asashirano/
 keywords: ["Flammenvögel", "Asahirano", "Elandor", "Hiroshi", "Natur", "Verantwortung"]
 ---
 

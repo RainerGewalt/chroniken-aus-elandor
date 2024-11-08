@@ -6,6 +6,7 @@ description: "Tief unter der Erde, in endloser Dunkelheit und bedrückender Enge
 cover_image: /assets/images/covers/die-ewigen-chroniken-erwachen.jpeg
 permalink: /buecher/die-ewigen-chroniken-erwachen/kapitel-2/
 keywords: ["Ewigen Chroniken", "Kapitel 2", "Chronenstaub", "Bergwerk", "Hagen", "Gefahr unter Tage", "Fantasy-Abenteuer", "Geheimnisse des Berges", "Überleben", "Düstere Atmosphäre", "Gefangen im Berg", "Flucht aus der Tiefe", "Schicksal", "Epische Reise", "Zeitmagie"]
+book_slug: die-ewigen-chroniken-erwachen
 ---
 
 

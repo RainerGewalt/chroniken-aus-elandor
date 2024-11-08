@@ -5,4 +5,5 @@ description: "In einer Welt voller geheimer Mächte und uralter Artefakte gerate
 cover_image: /assets/images/covers/die-ewigen-chroniken-erwachen.jpeg 
 keywords: ["Ewigen Chroniken", "Erwachen", "Fantasy", "Heilung", "Zerstörung", "geheime Mächte", "Artefakte"]
 type: book
+book_slug: die-ewigen-chroniken-erwachen
 ---
