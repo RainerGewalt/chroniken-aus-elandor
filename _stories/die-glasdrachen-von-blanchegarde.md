@@ -4,7 +4,7 @@ title: "Die Glasdrachen von Blanchegarde"
 description: "Léonie, ein junges Mädchen, begibt sich auf die Suche nach den legendären Glasdrachen, um die Balance der Zeit in der Stadt Blanchegarde wiederherzustellen."
 date: 2024-11-01
 cover_image: /assets/images/covers/die-glasdrachen-von-blanchegarde.webp
-permalink: /geschichten/die-glasdrachen-von-blanchegarde/
+permalink: /maerchen/die-glasdrachen-von-blanchegarde/
 keywords: ["Glasdrachen", "Blanchegarde", "Elandor", "Léonie", "Zeit", "Balance"]
 ---
 

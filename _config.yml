@@ -8,14 +8,13 @@ collections:
     output: true
   stories:
     output: true
-    permalink: /stories/:title/
+    permalink: /maerchen/:title/
   books:
     output: true
-    permalink: /books/:name/
+    permalink: /buecher/:name/
   chapters:
     output: true
-    permalink: /books/:book/:title/
-
+    permalink: /buecher/:book_slug/:title/
 
 defaults:
   - scope:
@@ -24,8 +23,5 @@ defaults:
     values:
       layout: story
 
-pagination:
-  enabled: true
-  per_page: 6
-  permalink: '/stories/page:num/'
-  collection: 'stories'
+plugins:
+  - jekyll-sitemap

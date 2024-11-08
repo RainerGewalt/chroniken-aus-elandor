@@ -1,4 +1,3 @@
 source "https://rubygems.org"
-gem "jekyll"
-gem 'jekyll-paginate-v2'
-gem 'jekyll-sitemap'
+gem "jekyll", "~> 4.3.4"
+gem "jekyll-sitemap"

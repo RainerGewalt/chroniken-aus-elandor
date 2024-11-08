@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Abenteuer aus Elandor"
-permalink: /books/
+permalink: /buecher/
 is_book_overview: true
 ---
 

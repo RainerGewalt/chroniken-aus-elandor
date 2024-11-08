@@ -27,7 +27,7 @@ description: "Entdecke die magische Welt von Elandor durch Märchen und Geschich
 
         <!-- Beispielbuch: Die Ewigen Chroniken - Erwachen -->
         <div class="story-card">
-          <a href="{{ '/books/die-ewigen-chroniken-erwachen/' | relative_url }}">
+          <a href="{{ '/buecher/die-ewigen-chroniken-erwachen/' | relative_url }}">
             <img src="{{ '/assets/images/covers/die-ewigen-chroniken-erwachen.jpeg' | relative_url }}" alt="Die Ewigen Chroniken - Erwachen Cover" class="story-card-cover">
             <h3>Die Ewigen Chroniken - Erwachen</h3>
           </a>
