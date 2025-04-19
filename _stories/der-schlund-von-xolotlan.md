@@ -1,6 +1,6 @@
 ---
 layout: story
-title: "Der Schlund von Xolotlan: Der Hüter zwischen Licht und Schatten"
+title: "Das Herz des Dschungels"
 description: "Als dunkle Mächte das Paradies von Xaltec bedrohen, stellt sich die göttliche Schlange Xolotl ihrem größten Kampf. Eine Geschichte über den Bruch mit alten Versprechen, die Suche nach Vergebung und die stille Kraft der Erneuerung."
 date: 2024-11-16
 cover_image: /assets/images/covers/der-schlund-von-xolotlan.png
