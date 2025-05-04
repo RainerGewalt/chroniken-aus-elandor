@@ -22,32 +22,17 @@
     <meta name="twitter:description" content="{{ page.description | default: site.description }}">
     <meta name="twitter:image" content="{{ page.cover_image | absolute_url }}">
 
-    <!-- Schema.org Structured Data -->
-    {% if page.layout == "chapter" or page.layout == "story" %}
-    <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "{% if page.layout == 'chapter' %}Chapter{% else %}ShortStory{% endif %}",
-            "name": "{{ page.title }}",
-            "url": "{{ page.url | absolute_url }}",
-        {% if page.layout == "chapter" %}
-        "chapterNumber": "{{ page.chapter_number | default: forloop.index }}",
-        "partOfBook": {
-        "@type": "Book",
-        "name": "{{ page.book }}",
-        "url": "{{ '/buecher/' | append: page.book_slug | relative_url | absolute_url }}"
-        },
-        {% endif %}
-        "author": {
-        "@type": "Person",
-        "name": "Florian Herzog"
-        },
-        "datePublished": "{{ page.date | date_to_xmlschema }}",
-        "description": "{{ page.description }}",
-        "image": "{{ page.cover_image | absolute_url }}"
-        }
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-X4FNZ19E53"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-X4FNZ19E53');
     </script>
-    {% endif %}
+
 
     <!-- Preload Fonts and Stylesheets for Improved Performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -61,14 +46,6 @@
         <link rel="stylesheet" href="{{ '/css/texts.css?v=1.0' | relative_url }}">
     </noscript>
 
-    <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YBSM5Q972W"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-YBSM5Q972W');
-    </script>
 
     <!-- Favicon -->
     <link rel="icon" href="{{ '/assets/images/logos/fh.webp' | relative_url }}" type="image/webp">
