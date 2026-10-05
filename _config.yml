@@ -1,7 +1,7 @@
 title: "Die Ewigen Chroniken"
 description: "Entdecke die magische Welt von Elandor durch Märchen und Geschichten."
-url: "https://ewigenchroniken.de"
-baseurl: ""
+url: "https://rainergewalt.github.io"
+baseurl: "/chroniken-aus-elandor"
 
 collections:
   pages:
