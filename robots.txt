@@ -16,4 +16,4 @@ Disallow: /private-images/
 Allow: /*.css
 Allow: /*.js
 
-Sitemap: https://ewigenchroniken.de/sitemap.xml
+Sitemap: https://rainergewalt.github.io/chroniken-aus-elandor/sitemap.xml
