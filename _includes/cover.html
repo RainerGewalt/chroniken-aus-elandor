@@ -1,0 +1,12 @@
+{%- comment -%}
+  Responsives Cover-Bild. Erwartet die Varianten aus scripts/optimize-images.sh.
+  Parameter: src (…/name.jpg), alt, sizes, class, loading ("lazy"/"eager"), width, height
+{%- endcomment -%}
+{%- assign cover_base = include.src | remove: ".jpg" -%}
+{%- assign cover_w = include.width | default: 1536 -%}
+{%- assign cover_h = include.height | default: 1024 -%}
+{%- assign cover_loading = include.loading | default: "lazy" -%}
+<picture>
+    <source type="image/webp" srcset="{{ cover_base | append: '-480.webp' | relative_url }} 480w, {{ cover_base | append: '-960.webp' | relative_url }} 960w, {{ cover_base | append: '.webp' | relative_url }} {{ cover_w }}w" sizes="{{ include.sizes | default: '100vw' }}">
+    <img src="{{ include.src | relative_url }}" alt="{{ include.alt | escape }}" width="{{ cover_w }}" height="{{ cover_h }}"{% if include.class %} class="{{ include.class }}"{% endif %} loading="{{ cover_loading }}" decoding="async"{% if cover_loading == "eager" %} fetchpriority="high"{% endif %}>
+</picture>

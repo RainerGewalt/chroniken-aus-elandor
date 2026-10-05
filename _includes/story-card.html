@@ -1,0 +1,8 @@
+{%- assign card_heading = include.heading | default: "h3" -%}
+<div class="story-card">
+    <a href="{{ include.story.url | relative_url }}">
+        {% include cover.html src=include.story.cover_image alt=include.story.cover_alt class="story-card-cover" sizes="(max-width: 700px) 92vw, 380px" loading=include.loading width=include.story.cover_width height=include.story.cover_height %}
+        <{{ card_heading }}>{{ include.story.title }}</{{ card_heading }}>
+    </a>
+    <p>{{ include.story.description }}</p>
+</div>

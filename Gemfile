@@ -1,3 +1,7 @@
 source "https://rubygems.org"
-gem "jekyll", "~> 4.3.4"
-gem "jekyll-sitemap"
+
+# Dieselben Versionen, mit denen GitHub Pages die Seite baut.
+gem "github-pages", group: :jekyll_plugins
+
+# Für `bundle exec jekyll serve` mit Ruby 3.
+gem "webrick"

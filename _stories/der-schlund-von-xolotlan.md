@@ -1,9 +1,10 @@
 ---
 layout: story
 title: "Das Herz des Dschungels"
-description: "Als dunkle Mächte das Paradies von Xaltec bedrohen, stellt sich die göttliche Schlange Xolotl ihrem größten Kampf. Eine Geschichte über den Bruch mit alten Versprechen, die Suche nach Vergebung und die stille Kraft der Erneuerung."
+description: "Als Tezcatlipoca, der Gott der Dunkelheit, erwacht, bittet das Mädchen Itzel die göttliche Schlange Xolotl um Hilfe. Ein Märchen aus dem Dschungel von Xaltec über die Verbundenheit von Mensch und Natur und die stille Kraft der Erneuerung."
 date: 2024-11-16
-cover_image: /assets/images/covers/der-schlund-von-xolotlan.png
+cover_image: /assets/images/covers/der-schlund-von-xolotlan.jpg
+cover_alt: "Ein Mädchen steht im Dschungel vor einer riesigen goldenen Schlange über einer leuchtenden Schlucht"
 permalink: /maerchen/der-schlund-von-xolotlan/
 keywords: ["Xolotl", "Xaltec", "Schlund von Xolotlan", "Tezcatlipoca", "Natur", "Erneuerung", "Legenden"]
 ---
@@ -24,11 +25,11 @@ Die Menschen von Xaltec lebten am Rande des Dschungels, in Dörfern aus Lehm und
 
 Eines Morgens, als der Nebel noch wie ein zarter Schleier über dem Dschungel lag, bemerkte Itzel eine Unruhe unter den Tieren. Die Moosfresser schabten hektisch an den Bäumen, als wollten sie eine unsichtbare Gefahr abwehren. Die Pilzkriecher versteckten sich in den Schatten, und die Kieselkrabbler zogen sich in ihre Kieselhäuser zurück. Die Blattläufer flüsterten von einer nahenden Dunkelheit, die sich wie ein Schatten über das Land legte.
 
-Beunruhigt eilte Itzel ins Dorf, um die Ältesten zu warnen. "Etwas stimmt nicht im Gleichgewicht der Welt", sagte sie mit ernster Stimme. "Die Tiere sind unruhig, und die Blattläufer sprechen von einer drohenden Gefahr." Die Ältesten, weise und erfahren, hörten ihr aufmerksam zu. "Tezcatlipoca, der Gott der Dunkelheit und des Chaos, ist erwacht", erklärten sie. "Seine Schattenwesen drohen, unsere Welt zu verschlingen."
+Beunruhigt eilte Itzel ins Dorf, um die Ältesten zu warnen. „Etwas stimmt nicht im Gleichgewicht der Welt“, sagte sie mit ernster Stimme. „Die Tiere sind unruhig, und die Blattläufer sprechen von einer drohenden Gefahr.“ Die Ältesten, weise und erfahren, hörten ihr aufmerksam zu. „Tezcatlipoca, der Gott der Dunkelheit und des Chaos, ist erwacht“, erklärten sie. „Seine Schattenwesen drohen, unsere Welt zu verschlingen.“
 
 Die Menschen und die Geschöpfe des Waldes beschlossen, gemeinsam zu handeln. Unter der Führung von Itzel verstärkten die Moosfresser ihre Bemühungen, die heiligen Bäume zu schützen, indem sie deren Wurzeln mit einem magischen Moosteppich bedeckten. Die Pilzkriecher sorgten dafür, dass nur heilsame Pilze wuchsen, die das Land stärken konnten. Die Kieselkrabbler reinigten die Flüsse mit erneuertem Eifer, sodass das Wasser wie flüssiges Glas strahlte. Die Blattläufer verbreiteten Warnungen und Hoffnungsbotschaften, die wie ein Flüstern im Wind durch den Dschungel zogen.
 
-Itzel suchte in einer stillen Nacht den heiligen Hain auf und bat Xolotl um Hilfe. "Großer Hüter des Gleichgewichts", flüsterte sie in die Dunkelheit, "wir brauchen deine Führung und deinen Schutz." Da erschien Xolotl in einem leuchtenden Schimmer vor ihr. "Du hast das Herz des Waldes verstanden, Itzel", sprach er mit einer Stimme, die wie ferner Donner klang. "Gemeinsam werden wir das Gleichgewicht bewahren."
+Itzel suchte in einer stillen Nacht den heiligen Hain auf und bat Xolotl um Hilfe. „Großer Hüter des Gleichgewichts“, flüsterte sie in die Dunkelheit, „wir brauchen deine Führung und deinen Schutz.“ Da erschien Xolotl in einem leuchtenden Schimmer vor ihr. „Du hast das Herz des Waldes verstanden, Itzel“, sprach er mit einer Stimme, die wie ferner Donner klang. „Gemeinsam werden wir das Gleichgewicht bewahren.“
 
 Am nächsten Tag erhob sich Xolotl in die Lüfte, sein majestätischer Körper wand sich durch die Wolken. Mit seiner göttlichen Macht schlug er seinen Schwanz in die Erde. An der Stelle, an der er traf, entstand der Schlund von Xolotlan, ein tiefer Graben, aus dem ein leuchtender Nebel aufstieg. Dieser Nebel bildete eine schützende Barriere, die Tezcatlipocas Schatten zurückdrängte und das Land vor der Dunkelheit bewahrte.
 
