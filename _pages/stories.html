@@ -8,12 +8,7 @@ permalink: /maerchen/
 
 <div class="stories-grid">
     {% for story in site.stories %}
-    <div class="story-card">
-        <a href="{{ story.url | relative_url }}">
-            <img src="{{ story.cover_image | relative_url }}" alt="{{ story.title }} Cover" class="story-card-cover">
-            <h2>{{ story.title }}</h2>
-        </a>
-        <p>{{ story.description }}</p>
-    </div>
+    {% if forloop.index <= 3 %}{% assign card_loading = "eager" %}{% else %}{% assign card_loading = "lazy" %}{% endif %}
+    {% include story-card.html story=story heading="h2" loading=card_loading %}
     {% endfor %}
 </div>

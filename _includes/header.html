@@ -1,90 +1,11 @@
-<!DOCTYPE html>
-<html lang="de">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ page.title }} | {{ site.title }}</title>
-    <meta name="author" content="Florian Herzog">
-    <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
-    <style>
-        /* Grundlegendes Styling */
-        header {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-            padding: 1rem;
-            position: relative;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Schatten für das Menü */
-            z-index: 1; /* Sicherstellen, dass der Header über dem Chevron liegt */
-        }
-        nav {
-            display: none;
-            gap: 1rem;
-            justify-content: center;
-            overflow: hidden;
-            transition: max-height 0.5s ease;
-            max-height: 0; /* Startzustand geschlossen */
-        }
-        /* Desktop-Ansicht */
-        @media (min-width: 769px) {
-            nav {
-                display: flex;
-                max-height: none;
-            }
-            .chevron-toggle {
-                display: none; /* Chevron auf Desktop ausblenden */
-            }
-        }
-        /* Mobilansicht */
-        @media (max-width: 768px) {
-            .chevron-toggle {
-                display: block;
-                font-size: 1.8rem;
-                cursor: pointer;
-                position: absolute;
-                bottom: -20px; /* Mehr Abstand nach unten, um Titelüberlappung zu vermeiden */
-                color: #333;
-                background-color: #f9f9f9; /* Heller Hintergrund für besseren Kontrast */
-                border-radius: 50%;
-                padding: 0.2rem 0.4rem;
-                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-                transition: transform 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
-                z-index: 0; /* Chevron-Schichtebene unter dem Header */
-            }
-            .chevron-toggle:hover {
-                color: #555; /* Leichter Farbwechsel beim Hover */
-                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Intensiverer Schatten beim Hover */
-            }
-            header.menu-open nav {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                max-height: 500px;
-            }
-            header.menu-open .chevron-toggle {
-                transform: rotate(180deg); /* Chevron nach oben drehen */
-            }
-        }
-    </style>
-</head>
-<body>
-<header id="header">
-    <h1><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h1>
-    <nav>
-        <a href="{{ '/' | relative_url }}" {% if page.url == "/" %}class="active"{% endif %}>Startseite</a>
-        <a href="{{ '/maerchen/' | relative_url }}" {% if page.url == "/maerchen/" %}class="active"{% endif %}>Märchen</a>
-        <a href="{{ '/buecher/' | relative_url }}" {% if page.url == "/buecher/" %}class="active"{% endif %}>Abenteuer</a>
-        <a href="{{ '/about/' | relative_url }}" {% if page.url == "/about/" %}class="active"{% endif %}>Über Elandor</a>
-        <a href="{{ '/der-autor/' | relative_url }}" {% if page.url == "/der-autor/" %}class="active"{% endif %}>Der Autor</a>
+<header class="site-header" id="header">
+    <p class="site-title"><a href="{{ '/' | relative_url }}">{{ site.title }}</a></p>
+    <nav class="site-nav" id="site-nav" aria-label="Hauptnavigation">
+        <a href="{{ '/' | relative_url }}"{% if page.url == "/" %} class="active" aria-current="page"{% endif %}>Startseite</a>
+        <a href="{{ '/maerchen/' | relative_url }}"{% if page.url contains "/maerchen/" %} class="active"{% if page.url == "/maerchen/" %} aria-current="page"{% endif %}{% endif %}>Märchen</a>
+        <a href="{{ '/buecher/' | relative_url }}"{% if page.url contains "/buecher/" %} class="active"{% if page.url == "/buecher/" %} aria-current="page"{% endif %}{% endif %}>Abenteuer</a>
+        <a href="{{ '/about/' | relative_url }}"{% if page.url == "/about/" %} class="active" aria-current="page"{% endif %}>Über Elandor</a>
+        <a href="{{ '/der-autor/' | relative_url }}"{% if page.url == "/der-autor/" %} class="active" aria-current="page"{% endif %}>Der Autor</a>
     </nav>
-    <span class="chevron-toggle" onclick="toggleMenu()">⌄</span>
+    <button class="nav-toggle" type="button" aria-controls="site-nav" aria-expanded="false" aria-label="Menü öffnen">⌄</button>
 </header>
-
-<script>
-    function toggleMenu() {
-        document.getElementById('header').classList.toggle('menu-open');
-    }
-</script>
-</body>
-</html>

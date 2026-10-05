@@ -3,7 +3,8 @@ layout: story
 title: "Die Wolkenlöwen der Donnerberge"
 description: "Ein junger Wolkenlöwe namens Sigmar lernt die Bedeutung von Verantwortung und Weisheit, als er in den mächtigen Donnerbergen seine Fähigkeiten über die Winde entdeckt."
 date: 2024-11-09
-cover_image: /assets/images/covers/die-wolkenloewen-der-donnerberge.jpeg
+cover_image: /assets/images/covers/die-wolkenloewen-der-donnerberge.jpg
+cover_alt: "Ein Löwe aus Wolken und Nebel schwebt über gewittrigen Berggipfeln"
 permalink: /maerchen/die-wolkenloewen-der-donnerberge/
 keywords: ["Wolkenlöwen", "Donnerberge", "Elandor", "Sigmar", "Sturm", "Weisheit"]
 ---
@@ -20,17 +21,17 @@ Mit funkelnden Augen und erfüllt von Tatendrang begann Sigmar, die Winde zu ruf
 
 Blitze zuckten wie Zungen zorniger Drachen, Donner grollte wie das Brüllen erzürnter Riesen, und die entfesselten Winde rissen an den uralten Bäumen der Wälder. Die Menschen in den Dörfern am Fuße der Berge blickten furchtsam gen Himmel und sahen, wie ihre Felder unter dem peitschenden Regen versanken. Wildbäche schwollen zu reißenden Flüssen an, Felsbrocken lösten sich von den Hängen und donnerten talwärts. Die einst schützenden Donnerberge zeigten eine längst vergessene Wildheit.
 
-Die älteren Wolkenlöwen, angeführt von Alvhild, eilten herbei, um das Chaos zu bändigen. Mit sanften, doch kraftvollen Stimmen begannen sie, die entfesselten Winde zu beruhigen. "Sigmar", sagte Alvhild mit einer Stimme wie ferner Donner, "die Macht über die Winde ist ein Geschenk, das mit Weisheit und Demut getragen werden muss. Du hast die Balance gestört; nun sieh, welche Folgen es hat."
+Die älteren Wolkenlöwen, angeführt von Alvhild, eilten herbei, um das Chaos zu bändigen. Mit sanften, doch kraftvollen Stimmen begannen sie, die entfesselten Winde zu beruhigen. „Sigmar“, sagte Alvhild mit einer Stimme wie ferner Donner, „die Macht über die Winde ist ein Geschenk, das mit Weisheit und Demut getragen werden muss. Du hast die Balance gestört; nun sieh, welche Folgen es hat.“
 
-Sigmar blickte auf die Verwüstung, die er ungewollt verursacht hatte, und sein Herz war schwer vor Reue. "Ich wollte nur etwas Großes schaffen, das die Menschen bewundern und meine Stärke zeigt", flüsterte er mit gesenktem Haupt.
+Sigmar blickte auf die Verwüstung, die er ungewollt verursacht hatte, und sein Herz war schwer vor Reue. „Ich wollte nur etwas Großes schaffen, das die Menschen bewundern und meine Stärke zeigt“, flüsterte er mit gesenktem Haupt.
 
-Alvhild legte sanft eine Pfote auf seine Schulter. "Wahre Größe zeigt sich nicht in Zerstörung, sondern in der Fähigkeit, Leben zu schützen und Harmonie zu bewahren. Die Winde sind unsere Verbündeten, keine Werkzeuge für Eitelkeit."
+Alvhild legte sanft eine Pfote auf seine Schulter. „Wahre Größe zeigt sich nicht in Zerstörung, sondern in der Fähigkeit, Leben zu schützen und Harmonie zu bewahren. Die Winde sind unsere Verbündeten, keine Werkzeuge für Eitelkeit.“
 
 In den folgenden Tagen arbeitete Sigmar unermüdlich, um seinen Fehler wiedergutzumachen. Unter der weisen Anleitung von Alvhild und den älteren Löwen lernte er, die Winde mit Feingefühl zu lenken, ihre Melodien zu verstehen und mit ihnen im Einklang zu sein. Gemeinsam zerstreuten sie die düsteren Wolken und ließen sanfte Regenfälle über das Land ziehen, die die Erde nährten und neues Leben erweckten. Die Flüsse beruhigten sich, die Felder erholten sich, und die Menschen blickten mit neuer Hoffnung zum Himmel.
 
 Sigmar verstand nun, dass wahre Macht nicht im Beherrschen, sondern im Verstehen liegt. Er begann, Wolkenbilder zu formen, die von Mut, Mitgefühl und der Weisheit der Alten erzählten. Seine Werke waren nun nicht mehr Ausdruck seines Stolzes, sondern Geschenke an die Welt, die Herzen berührten und Seelen inspirierten.
 
-Eines Abends, als die Sonne blutrot hinter den gezackten Gipfeln der Donnerberge versank und der Himmel in ein Feuer aus Farben getaucht war, setzte sich Sigmar auf einen hohen Felsen und lauschte dem uralten Flüstern des Windes. Es war, als würden die Berge selbst zu ihm sprechen: "Sigmar, der Weg des Wächters ist der Weg des Gleichgewichts. Hüte diese Weisheit in deinem Herzen.
+Eines Abends, als die Sonne blutrot hinter den gezackten Gipfeln der Donnerberge versank und der Himmel in ein Feuer aus Farben getaucht war, setzte sich Sigmar auf einen hohen Felsen und lauschte dem uralten Flüstern des Windes. Es war, als würden die Berge selbst zu ihm sprechen: „Sigmar, der Weg des Wächters ist der Weg des Gleichgewichts. Hüte diese Weisheit in deinem Herzen.“
 
 Mit neuem Verständnis erfüllte Sigmar seinen Platz unter den Wolkenlöwen mit Demut und Respekt. Die Menschen in den Tälern erzählten fortan die Geschichte des jungen Löwen, der lernte, die Winde zu hören und mit ihnen zu tanzen, anstatt sie zu bezwingen. Sie blickten zum Himmel und sahen in den kunstvollen Wolkenbildern nicht nur Schönheit, sondern auch die tiefe Verbindung zwischen den Welten.
 

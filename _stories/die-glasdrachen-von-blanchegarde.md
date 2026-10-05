@@ -1,9 +1,10 @@
 ---
 layout: story
-title: "Die Glasdrachen"
+title: "Die Glasdrachen von Blanchegarde"
 description: "Léonie, ein junges Mädchen, begibt sich auf die Suche nach den legendären Glasdrachen, um die Balance der Zeit in der Stadt Blanchegarde wiederherzustellen."
 date: 2024-11-01
-cover_image: /assets/images/covers/die-glasdrachen-von-blanchegarde.png
+cover_image: /assets/images/covers/die-glasdrachen-von-blanchegarde.jpg
+cover_alt: "Ein Mädchen steht vor einem riesigen Drachen aus Glas an einem Wasserfall im Wald"
 permalink: /maerchen/die-glasdrachen-von-blanchegarde/
 keywords: ["Glasdrachen", "Blanchegarde", "Elandor", "Léonie", "Zeit", "Balance"]
 ---
@@ -20,37 +21,37 @@ Die Wanderung war beschwerlich, aber die Landschaft war atemberaubend. Während 
 
 Plötzlich bemerkte sie ein flackerndes Licht zwischen den Bäumen. Als sie näher kam, sah sie ihn: den ältesten der Glasdrachen, Graudur. Sein Körper funkelte wie tausend Sterne, und obwohl er riesig war, strahlte er eine sanfte Ruhe aus.
 
-"Ah, Besuch..." murmelte Graudur mit tiefer, langsamer Stimme. "Es ist lange her... oder war es gestern? Hmmm... die Zeit spielt uns allen Streiche."
+„Ah, Besuch …“, murmelte Graudur mit tiefer, langsamer Stimme. „Es ist lange her … oder war es gestern? Hmmm … die Zeit spielt uns allen Streiche.“
 
-Léonie trat vorsichtig näher. "Entschuldigt bitte, ehrwürdiger Drache. Ich bin Léonie, und ich suche nach Antworten. In meiner Stadt spielt die Zeit verrückt, und ich glaube, es hat mit euren Schuppen zu tun."
+Léonie trat vorsichtig näher. „Entschuldigt bitte, ehrwürdiger Drache. Ich bin Léonie, und ich suche nach Antworten. In meiner Stadt spielt die Zeit verrückt, und ich glaube, es hat mit euren Schuppen zu tun.“
 
-Graudur blinzelte langsam und lächelte. "Meine Schuppen? Ach ja, die Schuppen... sie sind schön, nicht wahr? Sammeln das Licht, die Zeit, die Erinnerungen... Aber manchmal geraten Dinge aus dem Gleichgewicht."
+Graudur blinzelte langsam und lächelte. „Meine Schuppen? Ach ja, die Schuppen … sie sind schön, nicht wahr? Sammeln das Licht, die Zeit, die Erinnerungen … Aber manchmal geraten Dinge aus dem Gleichgewicht.“
 
-Er schien kurz in Gedanken zu versinken. "Wusstest du, dass die Sterne singen? Damals, als ich jung war, habe ich ihr Lied gehört... Oder war das ein Traum?"
+Er schien kurz in Gedanken zu versinken. „Wusstest du, dass die Sterne singen? Damals, als ich jung war, habe ich ihr Lied gehört … Oder war das ein Traum?“
 
-Léonie musste schmunzeln. "Vielleicht könnt ihr mir helfen, den Fluss der Zeit wiederherzustellen? Mein Vater und viele andere sind gefangen und finden nicht zurück."
+Léonie musste schmunzeln. „Vielleicht könnt ihr mir helfen, den Fluss der Zeit wiederherzustellen? Mein Vater und viele andere sind gefangen und finden nicht zurück.“
 
-Graudur nickte langsam. "Die Menschen sind immer so eilig. Dabei ist die Zeit wie ein Fluss – man kann sie nicht aufhalten, nur mit ihr schwimmen. Aber wenn jemand eine meiner Schuppen entwendet hat, kann das das Gleichgewicht stören."
+Graudur nickte langsam. „Die Menschen sind immer so eilig. Dabei ist die Zeit wie ein Fluss – man kann sie nicht aufhalten, nur mit ihr schwimmen. Aber wenn jemand eine meiner Schuppen entwendet hat, kann das das Gleichgewicht stören.“
 
-"Ein Alchemist aus unserer Stadt sprach von Unsterblichkeit und verschwand vor einigen Tagen", erinnerte sich Léonie laut.
+„Ein Alchemist aus unserer Stadt sprach von Unsterblichkeit und verschwand vor einigen Tagen“, erinnerte sich Léonie laut.
 
-"Ah, der Alchemist... immer auf der Suche nach dem ewigen Leben. Dabei übersieht er das Leben selbst", seufzte Graudur. "Um das Gleichgewicht wiederherzustellen, muss die Schuppe zurückkehren. Aber vielleicht... vielleicht gibt es einen anderen Weg."
+„Ah, der Alchemist … immer auf der Suche nach dem ewigen Leben. Dabei übersieht er das Leben selbst“, seufzte Graudur. „Um das Gleichgewicht wiederherzustellen, muss die Schuppe zurückkehren. Aber vielleicht … vielleicht gibt es einen anderen Weg.“
 
-Er begann, eine Melodie zu summen, die wie das Flüstern des Windes und das Murmeln eines Baches klang. "Dieses Lied... es bindet die Zeit und heilt die Wunden, die Gier geschlagen hat."
+Er begann, eine Melodie zu summen, die wie das Flüstern des Windes und das Murmeln eines Baches klang. „Dieses Lied … es bindet die Zeit und heilt die Wunden, die Gier geschlagen hat.“
 
-Léonie lauschte aufmerksam und spürte, wie die Melodie ihr Herz erfüllte. "Soll ich es singen?"
+Léonie lauschte aufmerksam und spürte, wie die Melodie ihr Herz erfüllte. „Soll ich es singen?“
 
-"Ja, kleines Herz. Singe es mit reinem Geist, und die Zeit wird ihren Weg finden."
+„Ja, kleines Herz. Singe es mit reinem Geist, und die Zeit wird ihren Weg finden.“
 
 Sie bedankte sich tief bei Graudur und machte sich auf den Rückweg. Unterwegs sang sie das Lied, leise zuerst, dann immer selbstbewusster. Die Bäume schienen sich zu wiegen, und die Tiere hielten inne, um zuzuhören.
 
 Als sie Blanchegarde erreichte, bemerkte sie, dass die Uhren wieder normal tickten. Die Menschen schienen erleichtert, auch wenn sie nicht genau wussten, warum. Ihr Vater stand vor seinem Laden und blickte verwirrt, aber glücklich um sich.
 
-"Léonie! Wo warst du? Ich habe das Gefühl, dich ewig nicht gesehen zu haben", rief er ihr entgegen.
+„Léonie! Wo warst du? Ich habe das Gefühl, dich ewig nicht gesehen zu haben“, rief er ihr entgegen.
 
-Sie lächelte. "Ich habe nur einen kleinen Spaziergang gemacht. Aber sag, wie geht es dir?"
+Sie lächelte. „Ich habe nur einen kleinen Spaziergang gemacht. Aber sag, wie geht es dir?“
 
-Er lachte. "Seltsam, ich fühle mich, als hätte ich einen langen Traum gehabt. Aber jetzt ist alles klar."
+Er lachte. „Seltsam, ich fühle mich, als hätte ich einen langen Traum gehabt. Aber jetzt ist alles klar.“
 
 In den folgenden Tagen kehrte die Normalität zurück, doch Léonie wusste, dass es mehr gab, als die Menschen ahnten. Sie dachte oft an Graudur und seine weisen, wenn auch verschlungenen Worte.
 

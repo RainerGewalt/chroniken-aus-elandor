@@ -1,0 +1,35 @@
+{%- comment -%} Strukturierte Daten (schema.org) für Suchmaschinen {%- endcomment -%}
+{%- capture author_json -%}{"@type": "Person", "name": {{ site.author.name | jsonify }}, "url": {{ '/der-autor/' | absolute_url | jsonify }}}{%- endcapture -%}
+{%- capture website_json -%}{"@type": "WebSite", "name": {{ site.title | jsonify }}, "url": {{ '/' | absolute_url | jsonify }}}{%- endcapture -%}
+{%- if page.url == "/" %}
+    <script type="application/ld+json">
+    {"@context": "https://schema.org", "@type": "WebSite", "name": {{ site.title | jsonify }}, "alternateName": "Chroniken aus Elandor", "url": {{ '/' | absolute_url | jsonify }}, "description": {{ site.description | jsonify }}, "inLanguage": "de", "author": {{ author_json }}}
+    </script>
+{%- elsif page.layout == "story" %}
+    <script type="application/ld+json">
+    {"@context": "https://schema.org", "@type": "ShortStory", "name": {{ page.title | jsonify }}, "headline": {{ page.title | jsonify }}, "description": {{ page.description | jsonify }}, "url": {{ page.url | absolute_url | jsonify }}, "image": {{ page.cover_image | absolute_url | jsonify }}, "datePublished": {{ page.date | date_to_xmlschema | jsonify }}, "inLanguage": "de", "genre": "Märchen", "keywords": {{ page.keywords | join: ', ' | jsonify }}, "author": {{ author_json }}, "isPartOf": {{ website_json }}}
+    </script>
+    <script type="application/ld+json">
+    {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "Startseite", "item": {{ '/' | absolute_url | jsonify }}},
+      {"@type": "ListItem", "position": 2, "name": "Märchen", "item": {{ '/maerchen/' | absolute_url | jsonify }}},
+      {"@type": "ListItem", "position": 3, "name": {{ page.title | jsonify }}, "item": {{ page.url | absolute_url | jsonify }}}]}
+    </script>
+{%- elsif page.layout == "chapter" %}
+    {%- assign book_url = '/buecher/' | append: page.book_slug | append: '/' %}
+    <script type="application/ld+json">
+    {"@context": "https://schema.org", "@type": "Chapter", "name": {{ page.title | jsonify }}, "description": {{ page.description | jsonify }}, "url": {{ page.url | absolute_url | jsonify }}, "position": {{ page.chapter_number | default: 1 }}, "inLanguage": "de", "author": {{ author_json }}, "isPartOf": {"@type": "Book", "name": {{ page.book | jsonify }}, "url": {{ book_url | absolute_url | jsonify }}}}
+    </script>
+    <script type="application/ld+json">
+    {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "Startseite", "item": {{ '/' | absolute_url | jsonify }}},
+      {"@type": "ListItem", "position": 2, "name": "Bücher", "item": {{ '/buecher/' | absolute_url | jsonify }}},
+      {"@type": "ListItem", "position": 3, "name": {{ page.book | jsonify }}, "item": {{ book_url | absolute_url | jsonify }}},
+      {"@type": "ListItem", "position": 4, "name": {{ page.title | jsonify }}, "item": {{ page.url | absolute_url | jsonify }}}]}
+    </script>
+{%- elsif page.layout == "book" %}
+    {%- assign book_chapters = site.chapters | where: "book", page.title | sort: "chapter_number" %}
+    <script type="application/ld+json">
+    {"@context": "https://schema.org", "@type": "Book", "name": {{ page.title | jsonify }}, "description": {{ page.description | jsonify }}, "url": {{ page.url | absolute_url | jsonify }}, "image": {{ page.cover_image | absolute_url | jsonify }}, "inLanguage": "de", "genre": "Fantasy", "bookFormat": "https://schema.org/EBook", "isAccessibleForFree": true, "author": {{ author_json }}, "hasPart": [{% for chapter in book_chapters %}{"@type": "Chapter", "name": {{ chapter.title | jsonify }}, "url": {{ chapter.url | absolute_url | jsonify }}, "position": {{ chapter.chapter_number | default: forloop.index }}}{% unless forloop.last %}, {% endunless %}{% endfor %}]}
+    </script>
+{%- endif %}

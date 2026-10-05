@@ -16,19 +16,14 @@ description: "Entdecke die magische Welt von Elandor durch Märchen und Geschich
       <div class="stories-grid">
         <!-- Beliebte Märchen -->
         {% for story in site.stories limit:3 %}
-          <div class="story-card">
-            <a href="{{ story.url | relative_url }}">
-              <img src="{{ story.cover_image | relative_url }}" alt="{{ story.title }} Cover" class="story-card-cover">
-              <h3>{{ story.title }}</h3>
-            </a>
-            <p>{{ story.description }}</p>
-          </div>
+          {% include story-card.html story=story heading="h3" %}
         {% endfor %}
 
         <!-- Beispielbuch: Die Ewigen Chroniken - Erwachen -->
         <div class="story-card">
           <a href="{{ '/buecher/die-ewigen-chroniken-erwachen/' | relative_url }}">
-            <img src="{{ '/assets/images/covers/die-ewigen-chroniken-erwachen.jpeg' | relative_url }}" alt="Die Ewigen Chroniken - Erwachen Cover" class="story-card-cover">
+            {% assign book = site.books | where: "book_slug", "die-ewigen-chroniken-erwachen" | first %}
+            {% include cover.html src=book.cover_image alt=book.cover_alt class="story-card-cover" sizes="(max-width: 700px) 92vw, 380px" width=book.cover_width height=book.cover_height %}
             <h3>Die Ewigen Chroniken - Erwachen</h3>
           </a>
           <p>Begib dich auf eine abenteuerliche Reise durch Elandor und entdecke die Ursprünge der Ewigen Chroniken in einem epischen Kampf zwischen Zeit und Macht.</p>
